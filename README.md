@@ -2,7 +2,7 @@
 - 该仓库为XMCL的后续版本
 - 版本为2.3＋
 - 以后在该项目中会由gxh和xuan2006来继续维护
-- XMCL.Core项目会作为内部文件，以后不再发布
+- XMCL.Core项目会作为内部文件，以后不会在GitHub发布
 
 XMCL [xuan2006’s Minecraft Laucher]
 一个全新的简洁 平面的Minecraft启动器
