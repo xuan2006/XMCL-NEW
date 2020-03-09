@@ -9,6 +9,8 @@ XMCL [xuan2006’s Minecraft Laucher]
 
 XMCL启动器在mcbbs上的介绍
 https://www.mcbbs.net/forum.php?mod=viewthread&tid=943216
+XMCL.Core核心以后将会在mcbbs的这个帖子中定期发布新版本
+https://www.mcbbs.net/forum.php?mod=viewthread&tid=980228&mobile=2
 
-
+最后感谢大家对我们的支持
 
