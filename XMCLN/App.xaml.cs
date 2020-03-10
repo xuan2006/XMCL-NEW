@@ -13,5 +13,6 @@ namespace XMCLN
     /// </summary>
     public partial class App : Application
     {
+        public static bool Logined = false;
     }
 }
