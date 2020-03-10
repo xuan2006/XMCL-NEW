@@ -1,0 +1,45 @@
+﻿<Page x:Class="XMCLN.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:XMCLN"
+      mc:Ignorable="d" 
+      d:DesignHeight="399" d:DesignWidth="782"
+      Title="Page2">
+
+    <Grid>
+        <Grid Margin="0,0,626,0" Background="#19FFFFFF">
+            <TreeView
+  MinWidth="156">
+                <TreeViewItem Header="客户端" Foreground="#DDFFFFFF">
+                    <TreeViewItem
+    Header="已安装的版本" Foreground="#DDFFFFFF" IsExpanded="True">
+                    </TreeViewItem>
+                    <TreeViewItem
+    Header="下载" Foreground="#DDFFFFFF">
+                        <TreeViewItem
+      Header="Forge" Foreground="#DDFFFFFF" />
+                        <TreeViewItem
+      Header="Optifine" Foreground="#DDFFFFFF" />
+                        <TreeViewItem
+                        Header="原版" Foreground="#DDFFFFFF" Width="202" />
+                    </TreeViewItem>
+                </TreeViewItem>
+                <TreeViewItem Header="资源包/光影包" Foreground="#DDFFFFFF">
+                    <TreeViewItem
+    Header="管理" Foreground="#DDFFFFFF" IsExpanded="True">
+                    </TreeViewItem>
+                    <TreeViewItem
+    Header="下载" Foreground="#DDFFFFFF">
+
+                    </TreeViewItem>
+                </TreeViewItem>
+
+            </TreeView>
+        </Grid>
+        <Frame x:Name="Frame" NavigationUIVisibility="Hidden" Content="" HorizontalAlignment="Left" Height="399" Margin="156,0,0,0" VerticalAlignment="Top" Width="626" Foreground="#00000000"/>
+
+    </Grid>
+</Page>

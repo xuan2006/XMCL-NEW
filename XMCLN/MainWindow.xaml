@@ -3,24 +3,26 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:XMCLN"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         WindowStyle="None"
         ResizeMode="CanMinimize"
         AllowsTransparency="True"
         Title="MainWindow" Height="450" Width="800" MouseLeftButtonDown="Window_MouseLeftButtonDown" Loaded="Window_Loaded">
     <Window.Background>
-        <ImageBrush ImageSource="BackGround.png" />
+        <ImageBrush ImageSource="pack://siteoforigin:,,,/Resources/BackGround.png"   />
     </Window.Background>
     <Grid>
-        <GroupBox
-  Header="          XMCL"
-  Style="{DynamicResource MaterialDesignGroupBox}"
-  materialDesign:ShadowAssist.ShadowDepth="Depth3"
-  BorderThickness="2">
+        <GroupBox   Style="{DynamicResource MaterialDesignGroupBox}" 
+                   materialDesign:ShadowAssist.ShadowDepth="Depth3" BorderThickness="2">
             <Frame x:Name="Frame" Content="" NavigationUIVisibility="Hidden" VerticalAlignment="Stretch" Margin="0,0,0,0"/>
-
+            <GroupBox.Header>
+                <TextBlock Text="XMCL" Foreground="White" Margin="20,0,0,0" >
+                    <TextBlock.ToolTip>
+                        <Button Content="qwq"/>
+                    </TextBlock.ToolTip></TextBlock>
+            </GroupBox.Header>
         </GroupBox>
         <materialDesign:ColorZone
   Mode="PrimaryMid" Margin="261,0,267,0" Height="33">

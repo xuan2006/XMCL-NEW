@@ -1,0 +1,29 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:local="clr-namespace:XMCLN"
+      xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="XMCLN.Page4"
+      mc:Ignorable="d" 
+      d:DesignHeight="399" d:DesignWidth="782"
+      Title="Page4">
+    <Grid>
+        <TextBox
+  x:Name="NameTextBox"
+  materialDesign:HintAssist.Hint="Name"
+  Margin="203,123,204,237" Foreground="White" BorderBrush="White" VerticalContentAlignment="Bottom" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"/>
+        <PasswordBox
+  x:Name="PasswordBox"
+  materialDesign:HintAssist.Hint="Password"
+  materialDesign:TextFieldAssist.HasClearButton="True"
+  Margin="203,169,204,195" Foreground="White" BorderBrush="White" />
+        <Label Content="登         录" Margin="350,91,352,0" VerticalAlignment="Top" FontSize="18" Foreground="White" Width="82" FontFamily="Calibri Light"/>
+        <ComboBox  x:Name="C1" HorizontalAlignment="Left" Margin="10,362,0,0" VerticalAlignment="Top" Width="120" Foreground="White" BorderBrush="White" SelectedIndex="0" DropDownClosed="C1_DropDownClosed">
+            <System:String>正版登录</System:String>
+            <System:String>离线登录</System:String>
+        </ComboBox>
+        <Button Content="登录" HorizontalAlignment="Left" Margin="655,362,0,0" VerticalAlignment="Top" Width="117" Height="27" Click="Button_Click"/>
+    </Grid>
+</Page>

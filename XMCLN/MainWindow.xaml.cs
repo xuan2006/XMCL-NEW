@@ -66,7 +66,7 @@ namespace XMCLN
                 FileStream fs1 = new FileStream(System.Environment.CurrentDirectory + "\\XMCL.json", FileMode.Create, FileAccess.ReadWrite);
                 try
                 {
-                    fs1.Write(Properties.Resources.XMCL, 0, Properties.Resources.XMCL.Length);
+                    fs1.Write(Resource.XMCL, 0, Resource.XMCL.Length);
                     fs1.Flush();
                     fs1.Close();
                 }

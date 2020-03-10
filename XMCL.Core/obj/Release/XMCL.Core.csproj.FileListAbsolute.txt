@@ -1,0 +1,17 @@
+C:\Users\20441\Desktop\XMCL\XMCL.Core\bin\Release\XMCL.Core.dll
+C:\Users\20441\Desktop\XMCL\XMCL.Core\bin\Release\XMCL.Core.pdb
+C:\Users\20441\Desktop\XMCL\XMCL.Core\bin\Release\Newtonsoft.Json.dll
+C:\Users\20441\Desktop\XMCL\XMCL.Core\bin\Release\System.IO.Packaging.dll
+C:\Users\20441\Desktop\XMCL\XMCL.Core\bin\Release\Newtonsoft.Json.xml
+C:\Users\20441\Desktop\XMCL\XMCL.Core\bin\Release\System.IO.Packaging.xml
+C:\Users\20441\Desktop\XMCL\XMCL.Core\obj\Release\XMCL.Core.csprojAssemblyReference.cache
+C:\Users\20441\Desktop\XMCL\XMCL.Core\obj\Release\DownLoadHelper.g.cs
+C:\Users\20441\Desktop\XMCL\XMCL.Core\obj\Release\XMCL.Core_MarkupCompile.cache
+C:\Users\20441\Desktop\XMCL\XMCL.Core\obj\Release\XMCL.Core_MarkupCompile.lref
+C:\Users\20441\Desktop\XMCL\XMCL.Core\obj\Release\DownLoadHelper.baml
+C:\Users\20441\Desktop\XMCL\XMCL.Core\obj\Release\XMCL.Core.g.resources
+C:\Users\20441\Desktop\XMCL\XMCL.Core\obj\Release\XMCL.Core.Properties.Resources.resources
+C:\Users\20441\Desktop\XMCL\XMCL.Core\obj\Release\XMCL.Core.csproj.GenerateResource.cache
+C:\Users\20441\Desktop\XMCL\XMCL.Core\obj\Release\XMCL.Core.csproj.CopyComplete
+C:\Users\20441\Desktop\XMCL\XMCL.Core\obj\Release\XMCL.Core.dll
+C:\Users\20441\Desktop\XMCL\XMCL.Core\obj\Release\XMCL.Core.pdb
