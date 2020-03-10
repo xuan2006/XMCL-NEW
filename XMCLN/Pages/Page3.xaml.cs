@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using XMCLN.Pages;
 
 namespace XMCLN
 {
@@ -29,5 +30,10 @@ namespace XMCLN
         {
             Frame.Navigate(new Setting1());
         }
+        private void Set2(object sender, MouseButtonEventArgs e)
+        {
+            Frame.Navigate(new Setting2());
+        }
+
     }
 }

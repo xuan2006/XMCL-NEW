@@ -14,11 +14,11 @@
             <TreeView
   MinWidth="156">
                 <TreeViewItem
-    Header="游戏设置" Foreground="#DDFFFFFF">
+    Header="游戏设置" Foreground="#DDFFFFFF" IsExpanded="True">
                     <TreeViewItem
       Header="全局设置" Foreground="#DDFFFFFF" PreviewMouseUp="Set1" />
                     <TreeViewItem
-      Header="下载" Foreground="#DDFFFFFF" />
+      Header="下载" Foreground="#DDFFFFFF" PreviewMouseUp="Set2"/>
                 </TreeViewItem>
                 <TreeViewItem
     Header="启动器设置" Foreground="#DDFFFFFF">

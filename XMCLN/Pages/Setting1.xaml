@@ -20,7 +20,6 @@
                         <TextBox Height="28" x:Name="TextBox_GamePath" Margin="100,26,86,16"/>
                         <Button x:Name="Button_OpenGame" Content="打开" Width="64" Height="24" FontSize="12" Margin="532,30,10,16" Click="Button_OpenGame_Click"/>
                         <RadioButton x:Name="R1" Content="默认" Margin="25,10,521,43" Height="17" Checked="R1_Checked"/>
-
                     </Grid>
                 </Expander>
                 <Border
@@ -67,7 +66,30 @@
       Height="1"
       HorizontalAlignment="Stretch"
       SnapsToDevicePixels="True" />
-
+                <Grid>
+                    <Label Height="48" Background="#FFFAFAFA" Content="     直入ip" Foreground="Black" VerticalContentAlignment="Center" FontSize="14"/>
+                    <TextBox x:Name="TextBox_ServerIP"
+  materialDesign:HintAssist.Hint="不必填写 可以留空"
+  Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+  VerticalAlignment="Top" Margin="140,0,10,0" Height="39" />
+                </Grid>
+                <Border
+      Background="{DynamicResource MaterialDesignDivider}"
+      Height="1"
+      HorizontalAlignment="Stretch"
+      SnapsToDevicePixels="True" />
+                <Grid>
+                    <Label Height="48" Background="#FFFAFAFA" Content="     Demo（试玩模式）" Foreground="Black" VerticalContentAlignment="Center" FontSize="14"/>
+                    <ToggleButton x:Name="ToggleButton1"
+  Style="{StaticResource MaterialDesignSwitchLightToggleButton}"
+  ToolTip="MaterialDesignSwitchLightToggleButton"
+  IsChecked="False" Margin="556,10,10,10" />
+                </Grid>
+                <Border
+      Background="{DynamicResource MaterialDesignDivider}"
+      Height="1"
+      HorizontalAlignment="Stretch"
+      SnapsToDevicePixels="True" />
             </StackPanel>
         </materialDesign:Card>
     </Grid>

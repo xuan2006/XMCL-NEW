@@ -79,7 +79,7 @@ namespace XMCLN {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/XMCLN;component/pages/page4.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/XMCL;component/pages/page4.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Pages\Page4.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

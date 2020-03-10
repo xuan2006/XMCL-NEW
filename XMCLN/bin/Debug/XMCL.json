@@ -1,7 +1,7 @@
 {
   "Files": {
-    "GamePath": "",
-    "JavaPath": "",
+    "GamePath": "E:\\.minecraft",
+    "JavaPath": "C:\\Program Files\\Java\\jre1.8.0_231\\bin\\javaw.exe",
     "CompleteResource": "true",
     "UseDefaultDirectory": "false",
     "DownloadSource": "Mojang"
@@ -9,14 +9,14 @@
   "JVM": {
     "MoreValueEnabled": "true",
     "Value": "",
-    "Memory": "1024",
+    "Memory": "512",
     "AutoMemory": "false"
   },
   "Login": {
-    "uuid": "",
-    "userName": "steve",
-    "accessToken": "",
-    "clientToken": ""
+    "uuid": "73eec3090be74a58be2984307f3f56cd",
+    "userName": "xuan2006",
+    "accessToken": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwNmFhNDE2ODUxMWM3NzkxYzYwMWQ2ZDI3MTU2OTVjZCIsInlnZ3QiOiJkODNiMzFlZGU4OTE0YjVkYmJiZDI5ZDhkZWJkMDE2NCIsInNwciI6IjczZWVjMzA5MGJlNzRhNThiZTI5ODQzMDdmM2Y1NmNkIiwiaXNzIjoiWWdnZHJhc2lsLUF1dGgiLCJleHAiOjE1ODQwMTcwNTIsImlhdCI6MTU4Mzg0NDI1Mn0.4ypewJv27h4iP15dlkamGcHEcx6B1_k-tteILO3iteg",
+    "clientToken": "39ba02108e8c457ab37c53146d602571"
   },
   "Video": {
     "Width": "854",
@@ -27,5 +27,9 @@
     "EnableImage": "false",
     "ImageFile": "",
     "BackgroundColor": "30,30,30,75"
+  },
+  "Game": {
+    "Demo": "false",
+    "ServerIP": "TTPP.CC"
   }
 }

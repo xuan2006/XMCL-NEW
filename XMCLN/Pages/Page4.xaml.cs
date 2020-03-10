@@ -22,18 +22,26 @@ namespace XMCLN
                 try
                 {
                     if (Authenticate.Login(NameTextBox.Text, PasswordBox.Password))
+                    {
                         this.NavigationService.Navigate(new Page1());
-                    else MessageBox.Show("登陆失败");
+                        App.IsOnline = true;
+                        XMCL.Core.Tools.GetSkins(Json.Read("Login", "uuid"));
+                    }
+                    else
+                    {
+                        MessageBox.Show("登陆失败");
+                    }
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("登陆失败," + ex.Message);
                 }
-
             }
             else
             {
                 Authenticate.Offline(NameTextBox.Text);
+                App.IsOnline = false;
+                this.NavigationService.Navigate(new Page1());
             }
         }
 

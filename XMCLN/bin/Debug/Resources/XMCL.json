@@ -3,7 +3,7 @@
     "GamePath": "",
     "JavaPath": "",
     "CompleteResource": "true",
-    "UseDefaultDirectory": "false",
+    "UseDefaultDirectory": "true",
     "DownloadSource": "Mojang"
   },
   "JVM": {
@@ -13,9 +13,9 @@
     "AutoMemory": "false"
   },
   "Login": {
-    "uuid": "",
+    "uuid": "8888888888888888",
     "userName": "steve",
-    "accessToken": "",
+    "accessToken": "8888888888888888",
     "clientToken": ""
   },
   "Video": {
@@ -27,5 +27,9 @@
     "EnableImage": "false",
     "ImageFile": "",
     "BackgroundColor": "30,30,30,75"
+  },
+  "Game": {
+    "Demo": "false",
+    "ServerIP": ""
   }
 }
