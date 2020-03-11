@@ -24,66 +24,34 @@ namespace XMCLN
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
+            button.IsEnabled = false;
             Label_Name.Content = Json.Read("Login", "userName");
             Thread thread = new Thread(() =>
             {
-                if (App.Logined)
+                if (Authenticate.Refresh(Json.Read("Login", "accessToken"), Json.Read("Login", "clientToken")))
                 {
+                    Tools.GetSkins(Json.Read("Login", "uuid"));
                     this.Dispatcher.BeginInvoke(new Action(() =>
                     {
-                        if (App.IsOnline)
-                        {
-                            Image_Skin.Source = new BitmapImage(new Uri(System.IO.Directory.GetCurrentDirectory() + "\\user\\" + Json.Read("Login", "userName") + "\\head.png"));
-                            Label_Login.Content = "正版登录";
-                        }
-                        else Label_Login.Content = "离线登录";
+                        Label_Login.Content = "正版登录";
+                        Image_Skin.Source = new BitmapImage(new Uri(System.IO.Directory.GetCurrentDirectory() + "\\user\\" + Json.Read("Login", "userName") + "\\head.png"));
                     }));
                 }
                 else
                 {
-                    if (XMCL.Core.Authenticate.Refresh(Json.Read("Login", "accessToken"), Json.Read("Login", "clientToken")))
+                    this.Dispatcher.BeginInvoke(new Action(() =>
                     {
-                        App.Logined = true; App.IsOnline = true;
-                        XMCL.Core.Tools.GetSkins(Json.Read("Login", "uuid"));
-                        this.Dispatcher.BeginInvoke(new Action(() =>
-                        {
-                            Label_Login.Content = "正版登录";
-                            Image_Skin.Source = new BitmapImage(new Uri(System.IO.Directory.GetCurrentDirectory() + "\\user\\" + Json.Read("Login", "userName") + "\\head.png"));
-                        }));
-                    }
-                    else
-                    {
-                        bool a = false;
-                        if (Json.Read("Login", "uuid").Length > 0)
-                            if (Json.Read("Login", "userName").Length > 0)
-                                a = true;
-                        if (a)
-                        {
-                            this.Dispatcher.BeginInvoke(new Action(() =>
-                            {
-                                Label_Login.Content = "离线登录";
-                            }));
-                        }
-                        else
-                        {
-                            this.Dispatcher.BeginInvoke(new Action(() =>
-                            {
-                                this.NavigationService.Navigate(new Page4());
-                            }));
-
-                        }
-                        App.Logined = true;
-                        App.IsOnline = false;
-                    }
+                        Label_Login.Content = "离线登录";
+                    }));
                 }
                 this.Dispatcher.BeginInvoke(new Action(() =>
                 {
                     Load.Visibility = Visibility.Collapsed;
+                    button.IsEnabled = true;
                 }));
             });
             thread.Start(); 
             GC.Collect();
-
         }
 
         private void ComboBox_DropDownOpened(object sender, EventArgs e)

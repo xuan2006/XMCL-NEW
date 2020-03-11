@@ -11,7 +11,7 @@
 
     <Grid>
         <ComboBox x:Name="C1" HorizontalAlignment="Left" Margin="328,355,0,0" VerticalAlignment="Top" Width="212" Height="34" BorderBrush="#89FFFFFF" DropDownOpened="ComboBox_DropDownOpened" Foreground="White"/>
-        <Button
+        <Button x:Name="button"
     Style="{StaticResource MaterialDesignRaisedButton}"
     ToolTip="Resource name: MaterialDesignRaisedButton" Margin="560,355,10,10" Height="Auto" Content="启动游戏" Click="Button_Click_Start"/>
         <materialDesign:Card

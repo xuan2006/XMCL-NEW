@@ -24,7 +24,6 @@ namespace XMCLN
                     if (Authenticate.Login(NameTextBox.Text, PasswordBox.Password))
                     {
                         this.NavigationService.Navigate(new Page1());
-                        App.IsOnline = true;
                         XMCL.Core.Tools.GetSkins(Json.Read("Login", "uuid"));
                     }
                     else
@@ -40,7 +39,6 @@ namespace XMCLN
             else
             {
                 Authenticate.Offline(NameTextBox.Text);
-                App.IsOnline = false;
                 this.NavigationService.Navigate(new Page1());
             }
         }

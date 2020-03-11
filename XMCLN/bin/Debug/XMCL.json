@@ -1,22 +1,22 @@
 {
   "Files": {
-    "GamePath": "E:\\.minecraft",
+    "GamePath": "",
     "JavaPath": "C:\\Program Files\\Java\\jre1.8.0_231\\bin\\javaw.exe",
     "CompleteResource": "true",
-    "UseDefaultDirectory": "false",
+    "UseDefaultDirectory": "true",
     "DownloadSource": "Mojang"
   },
   "JVM": {
     "MoreValueEnabled": "true",
     "Value": "",
-    "Memory": "512",
+    "Memory": "1024",
     "AutoMemory": "false"
   },
   "Login": {
     "uuid": "73eec3090be74a58be2984307f3f56cd",
     "userName": "xuan2006",
-    "accessToken": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwNmFhNDE2ODUxMWM3NzkxYzYwMWQ2ZDI3MTU2OTVjZCIsInlnZ3QiOiJjOTE4ZTQ1ODM2N2M0MGJiOTM5ZGY5OGY1MjAxZmM5OSIsInNwciI6IjczZWVjMzA5MGJlNzRhNThiZTI5ODQzMDdmM2Y1NmNkIiwiaXNzIjoiWWdnZHJhc2lsLUF1dGgiLCJleHAiOjE1ODQwNjkyNjcsImlhdCI6MTU4Mzg5NjQ2N30.yLIK12F9GqgX8uA0gHG8kr0B98xbh2xnQKKyfmaky50",
-    "clientToken": "39ba02108e8c457ab37c53146d602571"
+    "accessToken": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwNmFhNDE2ODUxMWM3NzkxYzYwMWQ2ZDI3MTU2OTVjZCIsInlnZ3QiOiJkNTk5YTJhNWNhMzE0NTNkYjZkNmIxZWNiNzk3YTM0NiIsInNwciI6IjczZWVjMzA5MGJlNzRhNThiZTI5ODQzMDdmM2Y1NmNkIiwiaXNzIjoiWWdnZHJhc2lsLUF1dGgiLCJleHAiOjE1ODQwOTg2MjksImlhdCI6MTU4MzkyNTgyOX0.lyhfl39Jbty6O5-WWDAbwQXtp4mu2SWYdqvgm2w9LU4",
+    "clientToken": "e04c2ef57bfd4d0c89a20c8c1a3e788d"
   },
   "Video": {
     "Width": "854",
@@ -30,6 +30,6 @@
   },
   "Game": {
     "Demo": "false",
-    "ServerIP": "TTPP.CC"
+    "ServerIP": ""
   }
 }
