@@ -97,3 +97,4 @@ C:\Users\20441\Desktop\XMCL-New\XMCL.Core\obj\Debug\XMCL.Core.csproj.GenerateRes
 C:\Users\20441\Desktop\XMCL-New\XMCL.Core\obj\Debug\XMCL.Core.csproj.CopyComplete
 C:\Users\20441\Desktop\XMCL-New\XMCL.Core\obj\Debug\XMCL.Core.dll
 C:\Users\20441\Desktop\XMCL-New\XMCL.Core\obj\Debug\XMCL.Core.pdb
+C:\Users\20441\Desktop\XMCL-New\XMCL.Core\obj\Debug\XMCL.Core.csprojAssemblyReference.cache

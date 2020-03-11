@@ -64,7 +64,16 @@ namespace XMCLN
                                 Label_Login.Content = "离线登录";
                             }));
                         }
+                        else
+                        {
+                            this.Dispatcher.BeginInvoke(new Action(() =>
+                            {
+                                this.NavigationService.Navigate(new Page4());
+                            }));
+
+                        }
                         App.Logined = true;
+                        App.IsOnline = false;
                     }
                 }
                 this.Dispatcher.BeginInvoke(new Action(() =>

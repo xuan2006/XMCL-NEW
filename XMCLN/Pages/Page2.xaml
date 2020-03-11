@@ -15,16 +15,16 @@
   MinWidth="156">
                 <TreeViewItem Header="客户端" Foreground="#DDFFFFFF" IsExpanded="True" Width="154">
                     <TreeViewItem
-    Header="已安装的版本" Foreground="#DDFFFFFF" IsExpanded="True">
+    Header="已安装的版本" Foreground="#DDFFFFFF" IsExpanded="True" PreviewMouseUp="SubPage1">
                     </TreeViewItem>
                     <TreeViewItem
     Header="下载" Foreground="#DDFFFFFF" IsExpanded="True">
                         <TreeViewItem
-      Header="Forge" Foreground="#DDFFFFFF" />
+      Header="Forge" Foreground="#DDFFFFFF" PreviewMouseUp="TreeViewItem_PreviewMouseUp" />
                         <TreeViewItem
-      Header="Optifine" Foreground="#DDFFFFFF" />
+      Header="Optifine" Foreground="#DDFFFFFF" PreviewMouseUp="TreeViewItem_PreviewMouseUp_1" />
                         <TreeViewItem
-                        Header="原版" Foreground="#DDFFFFFF" />
+                        Header="原版" Foreground="#DDFFFFFF"  PreviewMouseUp="TreeViewItem_PreviewMouseUp_2"/>
                     </TreeViewItem>
                 </TreeViewItem>
                 <TreeViewItem Header="资源包/光影包" Foreground="#DDFFFFFF" IsExpanded="True">
@@ -39,7 +39,7 @@
 
             </TreeView>
         </Grid>
-        <Frame x:Name="Frame" NavigationUIVisibility="Hidden" Content="" HorizontalAlignment="Left" Height="399" Margin="156,0,0,0" VerticalAlignment="Top" Width="626" Foreground="#00000000"/>
+        <Frame x:Name="Frame" NavigationUIVisibility="Hidden" Content="" HorizontalAlignment="Left" Height="399" Margin="156,0,0,0" VerticalAlignment="Top" Width="626" Foreground="#00000000" />
 
     </Grid>
 </Page>

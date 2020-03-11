@@ -85,6 +85,12 @@
     <Compile Include="Pages\Setting2.xaml.cs">
       <DependentUpon>Setting2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\SubPage1.xaml.cs">
+      <DependentUpon>SubPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SubPage2.xaml.cs">
+      <DependentUpon>SubPage2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Resource.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -123,6 +129,14 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Pages\Setting2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SubPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SubPage2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

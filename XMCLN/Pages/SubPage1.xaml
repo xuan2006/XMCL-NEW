@@ -1,0 +1,19 @@
+﻿<Page x:Class="XMCLN.Pages.SubPage1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:local="clr-namespace:XMCLN.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="399" d:DesignWidth="626"
+      Title="SubPage1" Loaded="Page_Loaded">
+
+    <Grid>
+        <materialDesign:Card  Margin="10">
+            <ListBox x:Name="List1" Background="{DynamicResource MaterialDesignBackground}"
+  IsEnabled="{Binding IsChecked, ElementName=EnableListBox}">
+            </ListBox>
+        </materialDesign:Card>
+    </Grid>
+</Page>
