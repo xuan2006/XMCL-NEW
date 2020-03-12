@@ -17,40 +17,8 @@ namespace XMCLN
             InitializeComponent();
         }
 
-        private void Login(object sender, RoutedEventArgs e)
-        {
-            this.NavigationService.Navigate(new Page4());
-        }
-
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            button.IsEnabled = false;
-            Label_Name.Content = Json.Read("Login", "userName");
-            Thread thread = new Thread(() =>
-            {
-                if (Authenticate.Refresh(Json.Read("Login", "accessToken"), Json.Read("Login", "clientToken")))
-                {
-                    Tools.GetSkins(Json.Read("Login", "uuid"));
-                    this.Dispatcher.BeginInvoke(new Action(() =>
-                    {
-                        Label_Login.Content = "正版登录";
-                        Image_Skin.Source = new BitmapImage(new Uri(System.IO.Directory.GetCurrentDirectory() + "\\user\\" + Json.Read("Login", "userName") + "\\head.png"));
-                    }));
-                }
-                else
-                {
-                    this.Dispatcher.BeginInvoke(new Action(() =>
-                    {
-                        Label_Login.Content = "离线登录";
-                    }));
-                }
-                this.Dispatcher.BeginInvoke(new Action(() =>
-                {
-                    Load.Visibility = Visibility.Collapsed;
-                    button.IsEnabled = true;
-                }));
-            });
-            thread.Start(); 
             GC.Collect();
         }
 

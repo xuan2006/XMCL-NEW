@@ -14,23 +14,6 @@
         <Button x:Name="button"
     Style="{StaticResource MaterialDesignRaisedButton}"
     ToolTip="Resource name: MaterialDesignRaisedButton" Margin="560,355,10,10" Height="Auto" Content="启动游戏" Click="Button_Click_Start"/>
-        <materialDesign:Card
-  Background="#FF673AB7"
-  Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
-  Padding="8" Margin="560,10,10,240">
-            <Grid HorizontalAlignment="Left" Height="131" VerticalAlignment="Top" Width="196" Margin="0">
-                <Image x:Name="Image_Skin" HorizontalAlignment="Center" Height="50" Margin="10,10,136,0" RenderOptions.BitmapScalingMode="NearestNeighbor" RenderOptions.ClearTypeHint="Enabled" VerticalAlignment="Top" Width="50" Source="pack://siteoforigin:,,,/Resources/steve.png"/>
-                <Label Content="欢迎回来" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" Height="27" Width="176" Foreground="White" FontSize="15"/>
-                <Button Content="登录" HorizontalAlignment="Left" Margin="132,107,0,0" VerticalAlignment="Top" Width="64" Height="24" Click="Login"/>
-                <Label Name="Label_Name" Content="Steve" HorizontalAlignment="Left" Margin="65,10,0,0" VerticalAlignment="Top" Height="27" Width="121" Foreground="White" FontSize="15"/>
-                <Label Name="Label_Login" Content="离线登录" HorizontalAlignment="Left" Margin="65,33,0,0" VerticalAlignment="Top" Height="27" Width="67" Foreground="White" FontSize="15"/>
-                <ProgressBar x:Name="Load"
-  Style="{StaticResource MaterialDesignCircularProgressBar}"
-  Value="0"
-  IsIndeterminate="True" Margin="132,37,44,74" Foreground="White" />
-
-            </Grid>
-        </materialDesign:Card>
         <materialDesign:Card Margin="10,10,594,208">
             <Grid>
                 <Grid.RowDefinitions>

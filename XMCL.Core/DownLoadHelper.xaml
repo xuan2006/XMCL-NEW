@@ -8,9 +8,9 @@
         ResizeMode="CanMinimize"
         WindowStyle="None"
         Height="226.873" Width="461">
-    <Grid Background="#FF707070">
+    <Grid Background="#00000000">
         <Grid Margin="1,1,1,1" Background="#FF1E1E1E">
-            <Label x:Name="Label0" Content="正在启动..." Margin="10,11,10,0" VerticalAlignment="Top" Width="439" Height="28" Foreground="White" FontFamily="Calibri Light" FontSize="13"/>
+            <Label x:Name="Label0" Content="正在启动..." Margin="10,8,10,0" VerticalAlignment="Top" Width="439" Height="28" Foreground="White" FontFamily="Calibri Light" FontSize="13" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Label x:Name="Label1" Content="正在下载" Margin="10,36,10,0" VerticalAlignment="Top" Height="23" Foreground="White" FontFamily="Calibri Light" FontSize="11"/>
             <Label x:Name="Label2" Content="正在下载" Margin="10,64,10,0" VerticalAlignment="Top" Height="23" Foreground="White" FontFamily="Calibri Light" FontSize="11"/>
             <Label x:Name="Label3" Content="正在下载" Margin="10,92,10,0" VerticalAlignment="Top" Height="23" Foreground="White" FontFamily="Calibri Light" FontSize="11"/>
