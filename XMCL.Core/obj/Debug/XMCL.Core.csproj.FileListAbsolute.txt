@@ -64,13 +64,11 @@ C:\Users\gaoxi\source\repos\XMCL-NEW\XMCL.Core\obj\Debug\XMCL.Core.csprojAssembl
 C:\Users\gaoxi\source\repos\XMCL-NEW\XMCL.Core\obj\Debug\DownLoadHelper.g.cs
 C:\Users\gaoxi\source\repos\XMCL-NEW\XMCL.Core\obj\Debug\GuideJVM.g.cs
 C:\Users\gaoxi\source\repos\XMCL-NEW\XMCL.Core\obj\Debug\Java.g.cs
-C:\Users\gaoxi\source\repos\XMCL-NEW\XMCL.Core\obj\Debug\WindowLogin.g.cs
 C:\Users\gaoxi\source\repos\XMCL-NEW\XMCL.Core\obj\Debug\XMCL.Core_MarkupCompile.cache
 C:\Users\gaoxi\source\repos\XMCL-NEW\XMCL.Core\obj\Debug\XMCL.Core_MarkupCompile.lref
 C:\Users\gaoxi\source\repos\XMCL-NEW\XMCL.Core\obj\Debug\DownLoadHelper.baml
 C:\Users\gaoxi\source\repos\XMCL-NEW\XMCL.Core\obj\Debug\GuideJVM.baml
 C:\Users\gaoxi\source\repos\XMCL-NEW\XMCL.Core\obj\Debug\Java.baml
-C:\Users\gaoxi\source\repos\XMCL-NEW\XMCL.Core\obj\Debug\WindowLogin.baml
 C:\Users\gaoxi\source\repos\XMCL-NEW\XMCL.Core\obj\Debug\XMCL.Core.g.resources
 C:\Users\gaoxi\source\repos\XMCL-NEW\XMCL.Core\obj\Debug\XMCL.Core.Properties.Resources.resources
 C:\Users\gaoxi\source\repos\XMCL-NEW\XMCL.Core\obj\Debug\XMCL.Core.Resource1.resources

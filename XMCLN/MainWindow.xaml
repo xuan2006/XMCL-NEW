@@ -20,45 +20,25 @@
             <GroupBox.Header>
                 <TextBlock Text="XMCL" Foreground="White" Margin="20,0,2,0" >
                     <TextBlock.ToolTip>
-                        <Button Content="qwq"/>
+                        <Button Content="Hello"/>
                     </TextBlock.ToolTip></TextBlock>
             </GroupBox.Header>
         </GroupBox>
-        <materialDesign:ColorZone
-  Mode="PrimaryMid" Margin="261,0,267,0" Height="33">
-            <StackPanel
-    Orientation="Horizontal"
-    Margin="2,4,0,0">
-                <RadioButton
-      Style="{StaticResource MaterialDesignTabRadioButton}"
-      Margin="4,0,4,3"
-      IsChecked="True"
+        <materialDesign:ColorZone Mode="PrimaryMid" Margin="261,0,267,0" Height="33">
+            <StackPanel  Orientation="Horizontal"   Margin="2,4,0,0">
+                <RadioButton    Style="{StaticResource MaterialDesignTabRadioButton}"   Margin="4,0,4,3"   IsChecked="True"
       Content="主页" Height="Auto" FontSize="13" BorderBrush="White" Checked="RadioButton_Checked"  />
-                <RadioButton
-      Style="{StaticResource MaterialDesignTabRadioButton}"
-      Margin="4,0,4,3"
-      IsChecked="False"
+                <RadioButton   Style="{StaticResource MaterialDesignTabRadioButton}"   Margin="4,0,4,3"    IsChecked="False"
       Content="游戏管理" Height="Auto" BorderBrush="White" FontSize="13" Checked="RadioButton_Checked_1" />
-                <RadioButton
-      Style="{StaticResource MaterialDesignTabRadioButton}"
-      Margin="4,0,4,3"
-      IsChecked="False"
+                <RadioButton    Style="{StaticResource MaterialDesignTabRadioButton}"     Margin="4,0,4,3"   IsChecked="False"
       Content="设置" Height="Auto" BorderBrush="White" FontSize="13" Checked="RadioButton_Checked_2" />
             </StackPanel>
         </materialDesign:ColorZone>
         <Button Style="{DynamicResource MaterialDesignFlatMidBgButton}" ToolTip="MaterialDesignFloatingActionMiniDarkButton" Margin="0,4,4,0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="48" Height="25" Foreground="White" Click="Button_Close">
-            <materialDesign:PackIcon
-    Kind="WindowClose"
-    Height="18"
-    Width="18" />
-
+            <materialDesign:PackIcon  Kind="WindowClose"  Height="18" Width="18" /> 
         </Button>
         <Button Style="{DynamicResource MaterialDesignFlatMidBgButton}" ToolTip="MaterialDesignFloatingActionMiniDarkButton" Margin="0,4,57,0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="48" Height="25" Foreground="White" Click="Button_Mini">
-            <materialDesign:PackIcon
-    Kind="WindowMinimize"
-    Height="18"
-    Width="18" />
-
+            <materialDesign:PackIcon   Kind="WindowMinimize"  Height="18"   Width="18" /> 
         </Button>
         <materialDesign:Chip Margin="538,2,0,419" Foreground="White" Background="White" Height="Auto" Click="Chip_Click">
             <StackPanel Orientation="Horizontal">
