@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using XMCLN.Pages;
 
 namespace XMCLN
 {
@@ -23,6 +24,26 @@ namespace XMCLN
         public Page2()
         {
             InitializeComponent();
+        }
+
+        private void SubPage1(object sender, MouseButtonEventArgs e)
+        {
+            Frame.Navigate(new SubPage1());
+        }
+
+        private void TreeViewItem_PreviewMouseUp(object sender, MouseButtonEventArgs e)
+        {
+            SubPage2.choose("forge", Frame);
+        }
+
+        private void TreeViewItem_PreviewMouseUp_1(object sender, MouseButtonEventArgs e)
+        {
+            SubPage2.choose("optifine", Frame);
+        }
+
+        private void TreeViewItem_PreviewMouseUp_2(object sender, MouseButtonEventArgs e)
+        {
+            SubPage2.choose("原版", Frame);
         }
     }
 }

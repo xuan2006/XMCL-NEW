@@ -1,17 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using WinForm = System.Windows.Forms;
 using XMCL.Core;
 
@@ -31,6 +20,8 @@ namespace XMCLN
         {
             if (Convert.ToBoolean(Json.Read("Video", "IsFullScreen")))
                 ToggleButton.IsChecked = true;
+            if (Convert.ToBoolean(Json.Read("Game", "Demo")))
+                ToggleButton1.IsChecked = true;
             if (Convert.ToBoolean(Json.Read("Files", "UseDefaultDirectory")))
                 R1.IsChecked = true;
             else R2.IsChecked = true;
@@ -39,6 +30,7 @@ namespace XMCLN
             TextBox_Memory.Text = Json.Read("JVM", "Memory");
             TextBox_Width.Text = Json.Read("Video", "Width");
             TextBox_Height.Text = Json.Read("Video", "Height");
+            TextBox_ServerIP.Text = Json.Read("Game", "ServerIP");
         }
 
         private void R1_Checked(object sender, RoutedEventArgs e)
@@ -51,6 +43,9 @@ namespace XMCLN
             if (ToggleButton.IsChecked == true)
                 Json.Write("Video", "IsFullScreen", "true");
             else Json.Write("Video", "IsFullScreen", "false");
+            if (ToggleButton1.IsChecked == true)
+                Json.Write("Game", "Demo", "true");
+            else Json.Write("Game", "Demo", "false");
             if (R1.IsChecked == true)
                 Json.Write("Files", "UseDefaultDirectory", "true");
             if (R2.IsChecked == true)
@@ -60,7 +55,8 @@ namespace XMCLN
             Json.Write("JVM", "Memory", TextBox_Memory.Text);
             Json.Write("Video", "Width", TextBox_Width.Text);
             Json.Write("Video", "Height", TextBox_Height.Text);
-
+            Json.Write("Game", "ServerIP", TextBox_ServerIP.Text);
+            
         }
 
         private void R2_Checked(object sender, RoutedEventArgs e)

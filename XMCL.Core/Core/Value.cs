@@ -62,6 +62,8 @@ namespace XMCL.Core
         public static string AccessToken { get; set; }
         public static bool IsFullScreen { get; set; }
         public static bool ComplementaryResources { get; set; }
+        public static bool IsDemo { get; set; }
+        public static string ServerIP { get; set; }
         public static string Arguments()
         {
             StringBuilder Main = new StringBuilder();
@@ -243,7 +245,31 @@ namespace XMCL.Core
                     .Replace("${user_type}", "Mojang").Replace("${version_type}", "XMCL.Core").Replace("${user_properties}","{}");
                 Main.Append(" "+minecraftArguments);
             }
-
+            if (ServerIP == null)
+            { }
+            else
+            {
+                if(ServerIP.Length==0)
+                {
+                    
+                }
+                else
+                {
+                    if (ServerIP.Contains(";"))
+                    {
+                        string[] a = ServerIP.Split(';');
+                        Main.Append(" --server " + a[0]);
+                        Main.Append(" --port " + a[1]);
+                    }
+                    else
+                    {
+                        Main.Append(" --server " + ServerIP);
+                        Main.Append(" --port " + "25565");
+                    }
+                }
+            }
+            if (IsDemo == true)
+                Main.Append(" --demo");
             return Main.ToString();
         }
         public static void Resource()
@@ -313,5 +339,4 @@ namespace XMCL.Core
         public static string DownloadSource = "Mojang";
         static string BMCLAPI_URL = "https://bmclapi2.bangbang93.com/";
     }
-
 }

@@ -1,0 +1,38 @@
+﻿<Page x:Class="XMCLN.Pages.SubPage2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:local="clr-namespace:XMCLN.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="399" d:DesignWidth="626"
+      Title="SubPage2" Loaded="Page_Loaded">
+    <Page.Resources>
+        <ContextMenu x:Key="ContextMenu">
+            <MenuItem Name="DownloadVersion" Header="下载" Click="DownloadVersion_Click"/>
+        </ContextMenu>
+    </Page.Resources>
+    <Grid>
+        <materialDesign:Card  Margin="10">
+            <ListView x:Name="ListView1" ContextMenu="{StaticResource ContextMenu}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn
+        DisplayMemberBinding="{Binding T1}"
+        Header="版本" Width="auto"/>
+                        <GridViewColumn
+        DisplayMemberBinding="{Binding T2}"
+        Header="正式/快照" Width="auto"/>
+                        <GridViewColumn
+        DisplayMemberBinding="{Binding T3}"
+        Header="地址" Width="380"/>
+                        <GridViewColumn
+        DisplayMemberBinding="{Binding T4}"
+        Header="时间" Width="auto"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </materialDesign:Card>
+    </Grid>
+</Page>

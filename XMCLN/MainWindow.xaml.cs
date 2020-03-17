@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -22,18 +22,8 @@ namespace XMCLN
     /// </summary>
     public partial class MainWindow : Window
     {
-        System.Reflection.Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
-        {
-            string dllName = args.Name.Contains(",") ? args.Name.Substring(0, args.Name.IndexOf(',')) : args.Name.Replace(".dll", "");
-            dllName = dllName.Replace(".", "_");
-            if (dllName.EndsWith("_resources")) return null;
-            System.Resources.ResourceManager rm = new System.Resources.ResourceManager(GetType().Namespace + ".Properties.Resources", System.Reflection.Assembly.GetExecutingAssembly());
-            byte[] bytes = (byte[])rm.GetObject(dllName);
-            return System.Reflection.Assembly.Load(bytes);
-        }
         public MainWindow()
         {
-            AppDomain.CurrentDomain.AssemblyResolve += new ResolveEventHandler(CurrentDomain_AssemblyResolve);
             InitializeComponent();
         }
 
@@ -75,6 +65,8 @@ namespace XMCLN
                     throw ex;
                 }
             }
+            Card_Login.Visibility = Visibility.Hidden;
+            login();
             System.GC.Collect();
         }
 
@@ -94,6 +86,62 @@ namespace XMCLN
         {
             WindowState = WindowState.Minimized;
             GC.Collect();
+        }
+
+        private void Chip_Click(object sender, RoutedEventArgs e)
+        {
+            Card_Login.Visibility = Visibility.Visible;
+        }
+
+        private void Card_Login_MouseLeave(object sender, MouseEventArgs e)
+        {
+            Card_Login.Visibility = Visibility.Hidden;
+        }
+        public void login()
+        {
+            Load.Visibility = Visibility.Visible;
+            Thread thread = new Thread(() =>
+            {
+                if (Authenticate.Refresh(Json.Read("Login", "accessToken"), Json.Read("Login", "clientToken")))
+                {
+                    Tools.GetSkins(Json.Read("Login", "uuid"));
+
+                    this.Dispatcher.BeginInvoke(new Action(() =>
+                    {
+                        Label_Name1.Content = Label_Name2.Content = Json.Read("Login", "userName");
+                        Label_Logined.Content = "正版登录";
+                        Load.Visibility = Visibility.Collapsed;
+                        head.Source = new BitmapImage(new Uri(System.IO.Directory.GetCurrentDirectory() + "\\user\\" + Json.Read("Login", "userName") + "\\head.png"));
+                    }));
+                    
+                }
+                else
+                {
+                    bool a = false;
+                    if (Json.Read("Login", "uuid").Length > 0)
+                        if (Json.Read("Login", "userName").Length > 0)
+                            if (Json.Read("Login", "accessToken").Length > 0)
+                                a = true;
+                    if (a)
+                    {
+                        this.Dispatcher.BeginInvoke(new Action(() =>
+                        {
+                            Label_Name1.Content = Label_Name2.Content = Json.Read("Login", "userName");
+                            Load.Visibility = Visibility.Collapsed;
+                        }));
+                    }
+                    else
+                    {
+                        this.Dispatcher.BeginInvoke(new Action(() =>
+                        {
+                            Window1.Window = this;
+                            Window1.login();
+                            login();
+                        }));
+                    }
+                }
+            });
+            thread.Start();
         }
     }
 }

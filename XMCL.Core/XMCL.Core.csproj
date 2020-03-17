@@ -104,9 +104,6 @@
     <Compile Include="Tools\FindJava.cs" />
     <Compile Include="Tools\Skins.cs" />
     <Compile Include="Tools\VersionsList.cs" />
-    <Compile Include="WindowLogin.xaml.cs">
-      <DependentUpon>WindowLogin.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -133,10 +130,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Java.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="WindowLogin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -71,12 +71,27 @@ namespace XMCL.Core {
         }
         
         /// <summary>
-        ///   查找 System.Byte[] 类型的本地化资源。
+        ///   查找类似 [
+        ///	{
+        ///		&quot;url&quot;:&quot;https://bmclapi2.bangbang93.com/optifine/1.7.2/HD_U/F7&quot;,
+        ///		&quot;name&quot;:&quot;OptiFine-1.7.2_HD_U_F7&quot;,
+        ///		&quot;website&quot;:&quot;http://optifine.net/adloadx?f=OptiFine_1.7.2_HD_U_F7.jar&quot;,
+        ///		&quot;R/P&quot;:&quot;Release&quot;,
+        ///		&quot;time&quot;:&quot;2018.04.04&quot;
+        ///	},
+        ///	{
+        ///		&quot;url&quot;:&quot;https://bmclapi2.bangbang93.com/optifine/1.7.10/HD_U/E7&quot;,
+        ///		&quot;name&quot;:&quot;OptiFine-1.7.10_HD_U_E7&quot;,
+        ///		&quot;website&quot;:&quot;http://optifine.net/adloadx?f=OptiFine_1.7.10_HD_U_E7.jar&quot;,
+        ///		&quot;R/P&quot;:&quot;Release&quot;,
+        ///		&quot;time&quot;:&quot;2018.04.04&quot;
+        ///	},
+        ///	{
+        ///		&quot;url&quot;:&quot;https://bmclapi2.bangbang93.com/optif [字符串的其余部分被截断]&quot;; 的本地化字符串。
         /// </summary>
-        internal static byte[] OptifineList {
+        internal static string OptifineList {
             get {
-                object obj = ResourceManager.GetObject("OptifineList", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("OptifineList", resourceCulture);
             }
         }
     }

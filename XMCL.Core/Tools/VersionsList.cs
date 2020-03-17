@@ -31,6 +31,18 @@ namespace XMCL.Core
             }
             return vs;
         }
+        public static List<string> GetVersionsListAll_Optifine()
+        {
+            List<string> vs = new List<string>();
+            JArray jArray = JArray.Parse(XMCL.Core.Resource1.OptifineList.ToString());
+            for (int i = 0; i < jArray.Count(); i++)
+            {
+                JObject jObject1 = JObject.Parse(jArray[i].ToString());
+                vs.Add(jObject1["name"].ToString() + "," + jObject1["R/P"].ToString() + "," + jObject1["url"].ToString() + "," + jObject1["time"]);
+            }
+            return vs;
+        }
+
         public static string[] GetVersions(string MinecraftFile)
         {
             string a = MinecraftFile;
